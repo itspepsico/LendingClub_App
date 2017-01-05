@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from datetime import timedelta
-from flask import make_response, request, current_app
+#from flask import make_response, request, current_app
 from functools import update_wrapper
 from flask import Flask
 from flask import jsonify, request
@@ -112,9 +112,8 @@ def crossdomain(origin=None, methods=None, headers=None,
 def hello_world():
     return "Welcome to the Team Ivy Web Service"
 
-#@app.route("/predict", methods=['GET', 'OPTIONS'])
-@app.route("/predict")
-@crossdomain(origin='*')
+@app.route("/predict", methods=['GET', 'OPTIONS'])
+#@crossdomain(origin='*')
 @jsonp
 def predict():
     input_list = [5000.00, '36 months', 10.65, 'B2', '10+ years','RENT', 24000, 'Verified',
