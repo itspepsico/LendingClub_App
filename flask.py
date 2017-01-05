@@ -116,13 +116,13 @@ def hello_world():
 @crossdomain(origin='*')
 @jsonp
 def predict():
-    #input_list = [5000.00, '36 months', 10.65, 'B2', '10+ years','RENT', 24000, 'Verified',
-    #              'n','credit_card', 27.65, 0, 'Jan-85',1 , 3, 0, 
-    #              13648, 83.7, 9, 0, 737, 742]
+    input_list = [5000.00, '36 months', 10.65, 'B2', '10+ years','RENT', 24000, 'Verified',
+                  'n','credit_card', 27.65, 0, 'Jan-85',1 , 3, 0, 
+                  13648, 83.7, 9, 0, 737, 742]
                 
-    input_list = [200000, '60 months', 50.89, 'F1', '6 years','RENT', 70000, 'Source Verified',
-                'n','debt_consolidation', 16.63, 0, 'Nov-02', 10, 10, 0, 
-                10470, 79.9, 50, 0, 667, 542]           
+    #input_list = [200000, '60 months', 50.89, 'F1', '6 years','RENT', 70000, 'Source Verified',
+    #            'n','debt_consolidation', 16.63, 0, 'Nov-02', 10, 10, 0, 
+    #            10470, 79.9, 50, 0, 667, 542]           
     
     all_cols = ['funded_amnt', 'term', 'int_rate', 'sub_grade', 'emp_length','home_ownership', 'annual_inc', 'verification_status',
             'pymnt_plan','purpose', 'dti', 'delinq_2yrs', 'earliest_cr_line','inq_last_6mths', 'open_acc', 'pub_rec', 
