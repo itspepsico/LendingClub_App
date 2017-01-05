@@ -112,7 +112,8 @@ def crossdomain(origin=None, methods=None, headers=None,
 def hello_world():
     return "Welcome to the Team Ivy Web Service"
 
-@app.route("/predict", methods=['GET', 'OPTIONS'])
+#@app.route("/predict", methods=['GET', 'OPTIONS'])
+@app.route("/predict")
 @crossdomain(origin='*')
 @jsonp
 def predict():
