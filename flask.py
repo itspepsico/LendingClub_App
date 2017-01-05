@@ -10,7 +10,8 @@ script_dir = os.path.realpath(os.path.dirname(sys.argv[0]))
 import warnings
 warnings.filterwarnings("ignore")
 
-all_models = np.load(os.path.join(script_dir, 'all_models_reg_n_grade.npy'))
+#all_models = np.load(os.path.join(script_dir, 'all_models_reg_n_grade.npy'))
+all_models = np.load('all_models_reg_n_grade.npy')
 best_model = all_models[2]
 
 #Define a function to one-hot encode data using the type of columns
